@@ -59,7 +59,7 @@ module clock(
 		);
 
 	bcdcounter minutes(
-		.clk(clk), .reset(reset), .en(sec_tick && ms_tick), .tick(), .data(min)
+		.clk(clk), .reset(reset), .en(sec_tick), .tick(), .data(min)
 		);
 
 endmodule
